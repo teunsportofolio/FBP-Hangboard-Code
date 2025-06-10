@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hangboard Software</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="hangboardstyles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Reaction hangs</h1>
+    
+    <button id="connectBleButton">Connect to BLE Device</button>
+    <p>BLE State: <span id="bleState" style="color:#d13a30;">Disconnected</span></p>
+
+    <h2>Time to reach goal weight (in milliseconds)</h2>
+    <p><span id="valueContainer">NaN</span></p>
+
+    <h2>Workout Settings</h2>
+
+    <label for="Sets">Reps (number of repeats)</label>
+    <input type="number" name="Sets" id="Sets" value="5" required>
+
+    <label for="GoalWeight">Target weight for 1 hand</label>
+    <input type="number" name="GoalWeight" id="GoalWeight" placeholder="Weight in kg" required>
+
+    <button id="startWorkout" type="button">Initialize workout</button>
+    <p class="big">Workout starts when you start hanging with both hands</p>
+
+    <a href="hangboardindex.html">Return to menu </a>
+  </div>
+
+  <script src="smartboardRandomhangsScript.js" defer></script>
+  <div class="container form">
+   <iframe 
+    src="https://forms.office.com/Pages/ResponsePage.aspx?id=R_J9zM5gD0qddXBM9g78ZF4G6A3z7DNEpuf6chJI4fdUMjA0NDAwWEJYMzNEUUdTVTRQWDNUSEdHSy4u&embed=true"
+    frameborder="0"
+    style="width: 100%; height: 480px; border: none; display: block;"
+    allowfullscreen
+    webkitallowfullscreen
+    mozallowfullscreen
+    msallowfullscreen>
+  </iframe>
+  </div>
+</body>
+</html>
